@@ -183,3 +183,23 @@ body > form button:hover {
     width: 100%;
     overflow-x: auto;
 }
+
+/* Mensagens de erro */
+.error-message {
+    background-color: #FEE2E2;
+    color: #991B1B;
+    border: 1px solid #FCA5A5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.error-message ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.error-message li {
+    margin-bottom: 5px;
+}

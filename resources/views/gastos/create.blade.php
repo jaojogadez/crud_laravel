@@ -10,6 +10,18 @@
 
     <h1>Cadastrar novo gasto</h1>
 
+    @if ($errors->any())
+        <div class="error-message">
+            <strong>Verifique os campos informados:</strong>
+
+            <ul>
+                @foreach ($errors->all() as $erro)
+                    <li>{{ $erro }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('gastos.store') }}" method="POST">
 
         @csrf

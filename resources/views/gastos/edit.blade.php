@@ -9,6 +9,18 @@
 <body>
     <h1>Editar gasto</h1>
 
+    @if ($errors->any())
+        <div class="error-message">
+            <strong>Verifique os campos informados:</strong>
+
+            <ul>
+                @foreach ($errors->all() as $erro)
+                    <li>{{ $erro }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('gastos.update', $gasto->id) }}" method="POST">
 
         @csrf
