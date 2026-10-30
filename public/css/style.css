@@ -1,0 +1,185 @@
+
+/* Variáveis de cores */
+:root {
+    --primary: #FACC15;
+    --primary-hover: #EAB308;
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --text: #171717;
+    --text-secondary: #64748B;
+    --border: #E2E8F0;
+    --danger: #DC2626;
+}
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    padding: 30px;
+}
+
+/* Título */
+h1 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: var(--text);
+}
+
+/* Subtítulo */
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background-color: var(--surface);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--text);
+    color: white;
+}
+
+tr:hover {
+    background-color: #FEFCE8;
+}
+
+/* Links */
+a {
+    color: #A16207;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+button {
+    background-color: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Botões de exclusão */
+td form button {
+    background-color: var(--danger);
+    color: white;
+}
+
+td form button:hover {
+    background-color: #B91C1C;
+}
+
+/* Formulários de cadastro e edição */
+body > form {
+    background-color: var(--surface);
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Rótulos */
+body > form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Campos */
+body > form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+/* Campo selecionado */
+body > form input:focus {
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.2);
+}
+
+/* Botão de salvar */
+body > form button {
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+body > form button:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Container principal */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho da página */
+.container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    margin-top: 35px;
+}
+
+/* Botão principal */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 12px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    color: var(--text);
+    text-decoration: none;
+}
+
+/* Responsividade da tabela */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
