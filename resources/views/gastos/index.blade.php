@@ -7,6 +7,13 @@
 </head>
 <body>
     <h1>Controle de Gastos</h1>
+
+    @if (session('success'))
+        <p style="color: green;">
+            {{ session('success') }}
+        </p>
+    @endif
+
     <h2>Meus Gastos</h2>
     <a href="{{ route('gastos.create') }}">
         Cadastrar novo gasto

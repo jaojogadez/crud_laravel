@@ -8,7 +8,6 @@
 <body>
 
     <h1>Cadastrar novo gasto</h1>
-    <p>Destino do formulário: {{ route('gastos.store') }}</p>
 
     <form action="{{ route('gastos.store') }}" method="POST">
 

@@ -39,7 +39,9 @@ class GastoController extends Controller
 
         Gasto::create($dados);
 
-        return redirect()->route('gastos.index');
+        return redirect()
+            ->route('gastos.index')
+            ->with('success', 'Gasto cadastrado com sucesso!');
     }
 
     /**
@@ -76,7 +78,9 @@ class GastoController extends Controller
 
         $gasto->update($dados);
 
-        return redirect()->route('gastos.index');
+        return redirect()
+            ->route('gastos.index')
+            ->with('success', 'Gasto atualizado com sucesso!');
     }
 
     /**
@@ -88,6 +92,8 @@ class GastoController extends Controller
 
         $gasto->delete();
 
-        return redirect()->route('gastos.index');
+        return redirect()
+            ->route('gastos.index')
+            ->with('success', 'Gasto excluído com sucesso!');
     }
 }
